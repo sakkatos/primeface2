@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <p:layout fullPage="true">
+            <p:layoutUnit position="center"
+                          style="background-color: springgreen;">
+                <h:outputText value="this is page3."/>
+                <br />
+                <h:link outcome="/mainPage.xhtml" value="Template Page" />
+            </p:layoutUnit>
+            <p:layoutUnit position="west"
+                          size="200"
+                          style="background-color: yellow"
+                          header="Left">
+                <h:outputText value="this is Left."/>            
+            </p:layoutUnit>
+            <p:layoutUnit position="east"
+                          size="100"
+                          style="background-color: orchid"
+                          header="Right">
+                <h:outputText value="this is Right."/>            
+            </p:layoutUnit>
+            <p:layoutUnit position="north"
+                          size="100"
+                          style="background-color: chocolate">
+                <h:outputText value="this is TopPage."/>            
+            </p:layoutUnit>
+            <p:layoutUnit position="south"
+                          size="50"
+                          style="background-color: dodgerblue">
+                <h:outputText value="this is FootPage."/>            
+            </p:layoutUnit>
+        </p:layout>
+    </h:body>
+</html>
