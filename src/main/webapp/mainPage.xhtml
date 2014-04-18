@@ -29,8 +29,8 @@ and open the template in the editor.
                 <h:link outcome="/page5.xhtml" value="Page5" />
 
                 <br /><br />
-                <p:inputText id="textBox1" value="Hippo"/> 
-                <p:button value="OK" />
+                <p:inputText id="textBox1" value="#{mymanageBean.getDialog()}"/> 
+                <p:button value="OK" onclick="#{mymanageBean.setDialog('Hellooo')}"/>
             </p:layoutUnit>
             <p:layoutUnit position="west"
                           size="200"
